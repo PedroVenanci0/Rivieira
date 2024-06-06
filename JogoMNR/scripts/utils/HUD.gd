@@ -10,4 +10,11 @@ func update_battery(delta):
 	var battery_bar : ColorRect = $Battery/MaxBattery/CurrentBattery
 	var player = $"../Player"
 	if player != null:
-		battery_bar.rect_size.x = move_toward(344*player.battery/player.MAX_BATTERY, 0, delta)
+		var _batteryTo = 344 * player.battery / player.MAX_BATTERY; # destino
+		var _diff = abs(_batteryTo - battery_bar.rect_size.x); # diferenca entre o antes e o depois
+		var _sp = _diff / 8;
+		battery_bar.rect_size.x = move_toward(battery_bar.rect_size.x, _batteryTo, _sp);
+	
+#		# Colorir barra
+#		battery_bar.modulate = Color.red if _diff > 2 else Color.white
+			
