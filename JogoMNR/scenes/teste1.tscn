@@ -383,6 +383,7 @@ position = Vector2( 1063, 410 )
 [node name="Botttom" parent="Lixo_spawner" index="1"]
 position = Vector2( 1069, 756 )
 
+<<<<<<< HEAD:JogoMNR/scenes/teste.tscn
 <<<<<<< main
 =======
 [node name="Particles" type="Node2D" parent="."]
@@ -393,4 +394,9 @@ amount = 20
 process_material = SubResource( 1 )
 
 >>>>>>> local
+=======
+[node name="SpawnTimer" parent="Lixo_spawner" index="2"]
+wait_time = 2.454
+
+>>>>>>> a9b09f7dce685dcce16cdd8fac9b9f99f1d3b061:JogoMNR/scenes/teste1.tscn
 [editable path="Lixo_spawner"]
