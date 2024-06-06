@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "",
+"class": "GDSerComm",
+"language": "NativeScript",
+"path": "res://addons/GDSerCommDock/bin/GDSerComm.gdns"
+} ]
+_global_script_class_icons={
+"GDSerComm": ""
+}
+
 [application]
 
 config/name="Pedro Venâncio"
@@ -16,10 +26,15 @@ config/icon="res://icon.png"
 [autoload]
 
 Global="*res://scenes/utils/Global.tscn"
+SerialCom="*res://scenes/utils/SerialCom.tscn"
 
 [display]
 
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/GDSerCommDock/plugin.cfg" )
 
 [gui]
 

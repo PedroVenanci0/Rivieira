@@ -288,8 +288,4 @@ position = Vector2( 536, 571 )
 amount = 20
 process_material = SubResource( 1 )
 
-[node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-
 [editable path="Lixo_spawner"]
