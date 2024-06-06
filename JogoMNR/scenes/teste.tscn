@@ -29,8 +29,9 @@ __meta__ = {
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 1, 0 )
 current = true
-limit_left = 1
+limit_left = 1000
 limit_top = 12
+limit_right = 1018
 limit_bottom = 779
 smoothing_enabled = true
 smoothing_speed = 3.0
@@ -38,7 +39,7 @@ smoothing_speed = 3.0
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2( 1020, 0 )
+motion_mirroring = Vector2( 1019, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 511.5, 195 )
@@ -46,15 +47,15 @@ scale = Vector2( 0.534896, 0.35 )
 texture = ExtResource( 5 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2( 1020, 0 )
+motion_mirroring = Vector2( 1019, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2( 511.5, 195 )
+position = Vector2( 485, 194 )
 scale = Vector2( 0.265625, 0.346296 )
 texture = ExtResource( 7 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2( 1020, 0 )
+motion_mirroring = Vector2( 1019, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2( 511.5, 195 )
@@ -62,15 +63,15 @@ scale = Vector2( 0.177431, 0.345833 )
 texture = ExtResource( 6 )
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2( 1020, 0 )
+motion_mirroring = Vector2( 1019, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
-position = Vector2( 511.5, 195 )
+position = Vector2( 481, 200 )
 scale = Vector2( 0.133268, 0.344444 )
 texture = ExtResource( 8 )
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2( 1020, 0 )
+motion_mirroring = Vector2( 1019, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
 pause_mode = 2
@@ -79,62 +80,82 @@ scale = Vector2( 2.7104, 3.16667 )
 texture = ExtResource( 9 )
 
 [node name="Sprite2" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 57, 354 )
+position = Vector2( 29.7499, 354 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 11 )
 
 [node name="Sprite3" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 152, 356 )
+position = Vector2( 124.75, 356 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 12 )
 
 [node name="Sprite4" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 225, 360 )
+position = Vector2( 197.75, 360 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 2 )
 
 [node name="Sprite5" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 296, 361 )
+position = Vector2( 268.75, 361 )
+scale = Vector2( 0.342887, 0.33871 )
+texture = ExtResource( 10 )
+
+[node name="Sprite28" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2( 877, 757 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 10 )
 
 [node name="Sprite6" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 376, 357 )
+position = Vector2( 348.75, 357 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 3 )
 
 [node name="Sprite7" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 486, 362 )
+position = Vector2( 458.75, 362 )
+scale = Vector2( 0.342887, 0.33871 )
+texture = ExtResource( 4 )
+
+[node name="Sprite27" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2( 145, 755 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 4 )
 
 [node name="Sprite8" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 597.75, 353.75 )
+position = Vector2( 570.5, 353.75 )
+scale = Vector2( 0.342887, 0.33871 )
+texture = ExtResource( 11 )
+
+[node name="Sprite26" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2( 29, 746 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 11 )
 
 [node name="Sprite9" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 692.75, 355.75 )
+position = Vector2( 665.5, 355.75 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 12 )
 
 [node name="Sprite10" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 765.75, 359.75 )
+position = Vector2( 738.5, 359.75 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 2 )
 
 [node name="Sprite11" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 836.75, 360.75 )
+position = Vector2( 809.5, 360.75 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 10 )
 
 [node name="Sprite12" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 916.75, 356.75 )
+position = Vector2( 889.5, 356.75 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 3 )
 
 [node name="Sprite13" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2( 1026.75, 361.75 )
+position = Vector2( 999.5, 361.75 )
+scale = Vector2( 0.342887, 0.33871 )
+texture = ExtResource( 4 )
+
+[node name="Sprite25" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2( 960, 756 )
 scale = Vector2( 0.342887, 0.33871 )
 texture = ExtResource( 4 )
 
@@ -218,9 +239,9 @@ flip_v = true
 [node name="Lixo_spawner" parent="." instance=ExtResource( 13 )]
 
 [node name="Top" parent="Lixo_spawner" index="0"]
-position = Vector2( 1010, 402 )
+position = Vector2( 1063, 410 )
 
 [node name="Botttom" parent="Lixo_spawner" index="1"]
-position = Vector2( 1012, 760 )
+position = Vector2( 1069, 756 )
 
 [editable path="Lixo_spawner"]
