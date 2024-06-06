@@ -13,6 +13,10 @@ config_version=4
 config/name="Pedro Venâncio"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://scenes/utils/Global.tscn"
+
 [display]
 
 window/stretch/mode="viewport"

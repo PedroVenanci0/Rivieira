@@ -239,6 +239,7 @@ position = Vector2( 1024, 752 )
 position = Vector2( 1127, 490 )
 
 [node name="HUD" parent="." instance=ExtResource( 14 )]
+layer = -2
 
 [node name="WorldBorder" type="StaticBody2D" parent="."]
 collision_layer = 3
@@ -258,5 +259,8 @@ position = Vector2( 0, 224 )
 shape = SubResource( 4 )
 
 [node name="PauseScreen" parent="." instance=ExtResource( 15 )]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
 
 [editable path="Lixo_spawner"]
