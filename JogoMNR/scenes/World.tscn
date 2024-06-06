@@ -236,7 +236,7 @@ position = Vector2( 1024, 752 )
 [node name="Particles" type="Node2D" parent="."]
 
 [node name="Particles2D" type="Particles2D" parent="Particles"]
-position = Vector2( 440, 505 )
+position = Vector2( 1127, 490 )
 
 [node name="HUD" parent="." instance=ExtResource( 14 )]
 
