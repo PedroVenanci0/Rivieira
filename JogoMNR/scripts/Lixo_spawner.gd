@@ -4,6 +4,7 @@ onready var botttom = $Botttom
 onready var lixo = preload("res://scenes/lixo.tscn")
 onready var spawn_timer: Timer = $SpawnTimer
 
+
 func _ready():
 	spawn_timer.start()
 
@@ -18,3 +19,5 @@ func spawn_lixo(lixo):
 	
 func get_randon_position():
 	return Vector2(top.global_position.x,rand_range(botttom.global_position.y,top.global_position.y))
+
+	
