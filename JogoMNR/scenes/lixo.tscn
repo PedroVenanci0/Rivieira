@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="lixo" type="StaticBody2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -19.0
+margin_top = -17.0
+margin_right = 21.0
+margin_bottom = 23.0
+color = Color( 0.141176, 0.745098, 0.164706, 1 )

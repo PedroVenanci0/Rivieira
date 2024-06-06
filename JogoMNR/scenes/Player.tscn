@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/bg/barco azul clone-1_sub.png.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 811.541, 175.754 )
+
+[sub_resource type="ParticlesMaterial" id=2]
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -19,3 +25,7 @@ flip_h = true
 position = Vector2( 0.624999, 0.375 )
 scale = Vector2( 0.0340402, 0.0362723 )
 shape = SubResource( 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+amount = 4
+process_material = SubResource( 2 )
