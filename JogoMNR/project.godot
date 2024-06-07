@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "",
+"class": "GDSerComm",
+"language": "NativeScript",
+"path": "res://addons/GDSerCommDock/bin/GDSerComm.gdns"
+} ]
+_global_script_class_icons={
+"GDSerComm": ""
+}
+
 [application]
 
 config/name="Pedro Venâncio"
