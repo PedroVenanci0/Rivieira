@@ -6,7 +6,8 @@ onready var com=$Com
 
 var accelerometerTiltX: int = 0
 var accelerometerTiltY: int = 0
-var sliderValue: int = 0
+var button1: int = 0
+var button4: int = 0
 var serialMessage = "" # Mensagem enviada pelo Esplora que contém os valores dos sensores.
 
 
@@ -41,11 +42,13 @@ func unpackMessage(message) -> void:
 		var sensorValue = tag.split(":")
 		match sensorValue[0]:
 			"tx":
-				accelerometerTiltX = float(sensorValue[1])
+				accelerometerTiltX = float(sensorValue[1]);
 			"ty":
-				accelerometerTiltY = float(sensorValue[1])
-			"sl":
-				sliderValue = float(sensorValue[1])
+				accelerometerTiltY = float(sensorValue[1]);
+			"b1":
+				button1 = int(sensorValue[1]);
+			"b4":
+				button4 = int(sensorValue[1]);
 			_:
 				pass
 

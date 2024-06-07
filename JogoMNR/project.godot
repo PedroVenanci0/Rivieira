@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "GDSerComm",
 "language": "NativeScript",
 "path": "res://addons/GDSerCommDock/bin/GDSerComm.gdns"
+}, {
+"base": "KinematicBody2D",
+"class": "Lixo",
+"language": "GDScript",
+"path": "res://scripts/lixo.gd"
 } ]
 _global_script_class_icons={
-"GDSerComm": ""
+"GDSerComm": "",
+"Lixo": ""
 }
 
 [application]
@@ -26,6 +32,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Global="*res://scenes/utils/Global.tscn"
+SerialCom="*res://scenes/utils/SerialCom/SerialCom.tscn"
 
 [display]
 
@@ -59,6 +66,11 @@ right={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777233,"unicode":0,"echo":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+collect={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":74,"unicode":0,"echo":false,"script":null)
  ]
 }
 

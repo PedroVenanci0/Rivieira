@@ -49,3 +49,4 @@ scale = Vector2( 8.77597, 8.77597 )
 shape = SubResource( 3 )
 
 [connection signal="timeout" from="BatteryTimer" to="." method="_on_BatteryTimer_timeout"]
+[connection signal="body_exited" from="AreaDeColeta" to="AreaDeColeta" method="_on_AreaDeColeta_body_exited"]

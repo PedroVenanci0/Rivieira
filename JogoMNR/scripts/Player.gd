@@ -1,8 +1,9 @@
 extends KinematicBody2D
 
-onready var SPEED = 400
+onready var SPEED = 2
 var MAX_BATTERY = 5
 var battery = MAX_BATTERY
+var velocity : Vector2
 
 func _ready():
 	pass
@@ -10,15 +11,23 @@ func _ready():
 	
 
 func _physics_process(_delta):
-	move_and_slide(movement())
+	movement()
+	move_and_slide(velocity*SPEED)
 
 func movement():
-	var direction = Vector2 (
-		Input.get_action_strength("right") - Input.get_action_strength("left"),
-		Input.get_action_strength("down") - Input.get_action_strength("up")
-	)
-	
-	return (direction*SPEED)
+	velocity = Input.get_vector("left","right","up","down")*100
+
+#	if SerialCom.port != null:
+#		velocity.x = SerialCom.accelerometerTiltX
+#		velocity.x = min(velocity.x, 120)
+#		velocity.x = max(velocity.x, -120)
+#		velocity.y = SerialCom.accelerometerTiltY
+#		velocity.y = min(velocity.y, 80)
+#		velocity.y= max(velocity.y, -80)
+#		velocity.normalized()
+		
+		
+#	print(velocity.y)
 
 ## Diminuir a bateria
 func _on_BatteryTimer_timeout():
