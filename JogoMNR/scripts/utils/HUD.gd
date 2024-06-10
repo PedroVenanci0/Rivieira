@@ -1,10 +1,13 @@
 extends CanvasLayer
 
+onready var label_score = $Label
+
 func _ready():
 	pass
 	
 func _process(delta):
 	update_battery(delta)
+	label_score.text = "Score: " + str(Global.score)
 	
 func update_battery(delta):
 	var battery_bar : ColorRect = $Battery/MaxBattery/CurrentBattery
@@ -12,9 +15,10 @@ func update_battery(delta):
 	if player != null:
 		var _batteryTo = 344 * player.battery / player.MAX_BATTERY; # destino
 		var _diff = abs(_batteryTo - battery_bar.rect_size.x); # diferenca entre o antes e o depois
-		var _sp = _diff / 8;
+		var _sp = _diff / 160;
 		battery_bar.rect_size.x = move_toward(battery_bar.rect_size.x, _batteryTo, _sp);
 	
 #		# Colorir barra
 #		battery_bar.modulate = Color.red if _diff > 2 else Color.white
 			
+

@@ -20,4 +20,6 @@ func spawn_lixo(lixo):
 func get_randon_position():
 	return Vector2(top.global_position.x,rand_range(botttom.global_position.y,top.global_position.y))
 
+
+
 	
