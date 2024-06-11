@@ -15,8 +15,6 @@ var progresso = 0
 var progresso_max = 100
 var speed_add = 1
 
-# Lista de texturas pré-carregadas
-var textures = []
 
 func _ready():
 	sprite.texture = get_random_texture()
@@ -36,6 +34,10 @@ func aumentar_progresso() -> void:
 		Global.score += 100
 		print(Global.score)
 		print("XAMA GOSTOSO")
+		var player = get_node("/root/Node2D/Player");
+		if player.has_method("add_battery"):
+			player.add_battery();
+		print(player)
 		queue_free()
 
 func resetar_progresso() -> void:

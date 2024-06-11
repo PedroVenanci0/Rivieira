@@ -243,6 +243,9 @@ position = Vector2( 1063, 410 )
 [node name="Botttom" parent="Lixo_spawner" index="1"]
 position = Vector2( 1069, 756 )
 
+[node name="SpawnTimer" parent="Lixo_spawner" index="2"]
+wait_time = 2.02
+
 [node name="Particles" type="Node2D" parent="."]
 
 [node name="Particles2D" type="Particles2D" parent="Particles"]

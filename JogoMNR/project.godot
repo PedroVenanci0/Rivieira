@@ -38,6 +38,10 @@ SerialCom="*res://scenes/utils/SerialCom/SerialCom.tscn"
 
 window/stretch/mode="viewport"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/GDSerCommDock/plugin.cfg" )
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
